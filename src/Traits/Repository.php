@@ -2,7 +2,7 @@
 namespace Npc\DDD\Traits;
 
 use Npc\DDD\Domain\Entity;
-use Npc\Model\ModelResource;
+use Npc\Helper\Phalcon\Model\ModelResource;
 use \Exception;
 
 trait Repository

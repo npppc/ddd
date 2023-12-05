@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "cakephp/collection": "4.3.11",
-        "npppc/entity": "dev-master"
+        "npppc/entity": "dev-master",
+        "npppc/helper": "dev-master"
     },
     "license": "MIT",
     "autoload": {

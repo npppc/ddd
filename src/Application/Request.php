@@ -48,23 +48,12 @@ class Request extends Base
                 }
             }
             return $safe;
-            return $safe ? $this->getValidator()->validate($validate,$rules,[],$attributes) : $validate;
         }
-        catch (\Validation\ValidationException $e)
+        catch (\Exception $e)
         {
-            $errors = $e->validator->errors()->all();
-            throw new \Exception('DTO参数验证错误：'.implode(',',$errors));
+            throw new \Exception($e->getMessage());
         }
     }
-
-//    public function getValidator()
-//    {
-//        $translator = new Translator(
-//            require APP_PATH.'/config/validation.php'
-//        );
-//        return new ValidatorFactory($translator);
-//    }
-
 
     /**
      * DTO 只在像 service 传递的时候会触发
