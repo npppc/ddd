@@ -1,0 +1,22 @@
+{
+    "name": "npppc/ddd",
+    "description": "DDD",
+    "type": "library",
+    "require": {
+        "cakephp/collection": "4.3.11",
+        "npppc/entity": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Npc\\DDD\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "npppc",
+            "email": "npcchina@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
